@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".report">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/camera"
+
+        />
+    <TextView
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="image:0"
+        android:layout_below="@id/imgProfile"
+        android:textAlignment="textEnd"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/reportAge"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/images"
+
+        />
+
+    <TextView
+        android:id="@+id/reportEducation"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:hint="Education"
+        android:layout_below="@id/reportAge"
+       />
+    <TextView
+
+        android:id="@+id/reportFathername"
+        android:layout_width="160dp"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/reportEducation"
+        android:hint="Father's name"/>
+    <TextView
+        android:id="@+id/reportGrandFathername"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:layout_below="@id/reportFathername"
+        android:hint="GrandFather's Name"
+       />
+    <TextView
+        android:layout_width="160dp"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/reportAge"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/images"
+        android:id="@+id/reportReligion"/>
+
+    <TextView
+        android:id="@+id/reportMother"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Mother's Name"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/reportFathername"
+        android:layout_below="@id/reportOccupation"
+        android:layout_marginStart="40dp"
+        />
+    <TextView
+        android:id="@+id/reportOccupation"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/reportReligion"
+        android:layout_marginTop="20dp"
+        android:hint="Occupation"
+        android:layout_toEndOf="@id/reportEducation"
+        android:textSize="15sp"
+        android:layout_marginStart="40dp"
+        />
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Husband/Wife Name"
+        android:layout_marginStart="40dp"
+        android:textSize="15sp"
+        android:layout_below="@id/reportMother"
+        android:layout_toEndOf="@id/reportGrandFathername"
+        android:id="@+id/reportSpousename"/>
+
+</RelativeLayout>
